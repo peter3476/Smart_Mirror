@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RESULT.HairLoss_Result">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/nanum"
+                        android:paddingLeft="25dp"
+                        android:text="SMART MIRROR"
+                        android:textColor="#9c48db"
+                        android:textSize="35dp" />
+
+                    <View
+                        android:layout_width="360dp"
+                        android:layout_height="3dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#9c48db" />
+                    <!--                    109ee0-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ProgressBar
+                        android:id="@+id/progress_smile"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="360dp"
+                        android:layout_height="50dp"
+                        android:indeterminateDrawable="@drawable/progressbar_animation"
+                        android:max="100"
+                        android:progressDrawable="@drawable/progressbar_progressbar1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="인상 호감도"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/score"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="Score"
+                        android:textSize="25dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/nanum"
+                android:paddingLeft="25dp"
+                android:paddingBottom="5dp"
+                android:text="진단 결과"
+                android:textColor="#9c48db"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="360dp"
+                android:layout_height="3dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="#9c48db" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    android:text="현재 인상 호감도의 점수는 50점입니다. 행복한 생각과 상쾌한 하루를 떠올리며 입가에 미소를 지어보세요 : )"
+                    android:textColor="#424141"
+                    android:textSize="15dp" />
+
+                <View
+                    android:layout_width="360dp"
+                    android:layout_height="3dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/dotted_line_horizontal" />
+
+                <TextView
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    android:text="오늘의 날씨는 매우 화창하고 선선한 날씨가 예정되어있습니다. 옷장에 걸어두었던 트렌치 코트를 입어보세요 : ) 오늘도 화이팅!"
+                    android:textColor="#424141"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/nanum"
+                    android:paddingLeft="25dp"
+                    android:paddingBottom="5dp"
+                    android:text="예방 방법"
+                    android:textColor="#9c48db"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="360dp"
+                    android:layout_height="3dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:background="#9c48db" />
+
+                <TextView
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    android:text="탈모 비율 70%입니다. 각별히 주의를 기울일 필요성이 있습니다. 머리를 감더라도 뜨거운 물보단 미지근한 물 혹은 차가운 물로 감으세요."
+                    android:textColor="#424141"
+                    android:textSize="15dp" />
+
+                <View
+                    android:layout_width="360dp"
+                    android:layout_height="3dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/dotted_line_horizontal" />
+
+                <TextView
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    android:text="현재 단계는 탈모 진행이 이루어진 상태이므로 음식물 섭취에도 집중할 필요가 있습니다. 모근의 힘을 길러주는 검은 콩을 많이 드세요."
+                    android:textColor="#424141"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_freeboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="자유게시판"
+        android:textColor="#354649"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:id="@+id/auto_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/tv_auto"
+                android:layout_width="330dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/list_shape"
+                android:completionThreshold="2"
+                android:singleLine="true"
+                android:hint="검색어를 입력하세요. ※ 두 글자 이상 입력 ※"
+                android:textSize="13sp"
+                android:paddingLeft="10dp" />
+
+            <ImageView
+                android:id="@+id/search_Btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/search"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/auto_container"
+            android:layout_marginTop="10dp"
+            android:background="#9fb1b5" />
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view" >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_FreeBoard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <Button
+            android:id="@+id/freeBoard_writeBtn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/swipe_layout"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/board_wirte_completebtn"
+            android:text="글쓰기"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

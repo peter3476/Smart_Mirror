@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_write"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="글쓰기"
+            android:textColor="#7868e6"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/completeBtn"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/tv_write"
+            android:layout_marginLeft="90dp"
+            android:background="@drawable/board_wirte_completebtn"
+            android:text="완료"
+            android:textSize="15sp"
+            android:textColor="#7868e6"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/et_Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="제목"
+        android:paddingTop="20dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/board_write_title"
+        />
+
+    <View
+        android:layout_width="320dp"
+        android:layout_height="2dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:background="#b9c7c9" />
+
+    <EditText
+        android:id="@+id/et_Content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:hint="내용을 입력하세요"
+        android:gravity="top"
+        android:paddingTop="20dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/board_write_content"
+        android:backgroundTint="@android:color/transparent"
+        />
+
+    <ImageView
+        android:id="@+id/add_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+
+
+    <ImageButton
+        android:id="@+id/camera_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:paddingLeft="20dp"
+        android:src="@drawable/camera_image"
+        android:background="@android:color/transparent"
+        />
+
+</LinearLayout>

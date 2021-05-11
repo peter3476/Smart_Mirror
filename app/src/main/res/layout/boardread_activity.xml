@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="자유게시판"
+        android:textColor="#354649"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_BoardRead_ProfileImg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/mypage"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_BoardRead_userId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="성결대 1등 M자 탈모"
+                android:textStyle="bold"
+                android:paddingLeft="15dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="02/01 00:45"
+                android:textSize="10sp"
+                android:paddingLeft="15dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_BoardRead_Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="제목"
+            android:textStyle="bold"
+            android:textColor="#4f5557"
+            android:textSize="23sp"
+            android:layout_marginBottom="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_BoardRead_Content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="내용"
+            android:textColor="#606669"
+            android:textSize="17sp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_BoardRead_img"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="375dp"
+        android:layout_height="2dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:background="#9fb1b5" />
+
+
+</LinearLayout>

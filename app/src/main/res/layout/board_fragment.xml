@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/auto_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/tv_auto"
+                android:layout_width="310dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/list_shape"
+                android:completionThreshold="2"
+                android:singleLine="true"
+                android:hint="검색어를 입력하세요. ※ 두 글자 이상 입력 ※"
+                android:textSize="13sp"
+                android:paddingLeft="10dp" />
+
+            <ImageView
+                android:id="@+id/search_Btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/purplesearch"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                />
+
+        </LinearLayout>
+
+<!--        <View-->
+<!--            android:id="@+id/view"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:layout_below="@+id/auto_container"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:background="#9fb1b5" />-->
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/auto_container" >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_FreeBoard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <Button
+            android:id="@+id/freeBoard_writeBtn"
+            android:layout_width="85dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignBottom="@+id/swipe_layout"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/board_write_btn"
+            android:text="글쓰기"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

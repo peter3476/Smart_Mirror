@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E0E7E9"
+    tools:context=".RESULT.HairLoss_Result">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="g a t i o n"
+                        android:textStyle="bold"
+                        android:textColor="#354649"
+                        android:textAlignment="center"
+                        android:textSize="30sp"
+                        android:layout_marginTop="20dp"
+                        />
+
+                    <View
+                        android:layout_width="360dp"
+                        android:layout_height="4dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_centerInParent="true"
+                        android:background="#354649" />
+
+
+                </LinearLayout>
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/HairLoss_piechart"
+                    android:layout_width="287dp"
+                    android:layout_height="320dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"/>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Dan_grade"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:text="Dagerous Grade"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="진단 결과"
+                android:textSize="23dp"
+                android:textColor="#354649"
+                android:textStyle="bold"
+                android:fontFamily="@font/nanum"
+                android:paddingLeft="25dp"
+                android:paddingBottom="5dp"/>
+
+            <View
+                android:layout_width="360dp"
+                android:layout_height="3dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:background="#354649" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="2dp"
+                    android:text="탈모 비율 70%입니다. 각별히 주의를 기울일 필요성이 있습니다. 머리를 감더라도 뜨거운 물보단 미지근한 물 혹은 차가운 물로 감으세요."
+                    android:textColor="#424141"
+                    android:textSize="15dp" />
+
+                <View
+                    android:layout_width="360dp"
+                    android:layout_height="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/dotted_line_horizontal" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:text="현재 단계는 탈모 진행이 이루어진 상태이므로 음식물 섭취에도 집중할 필요가 있습니다. 모근의 힘을 길러주는 검은 콩을 많이 드세요."
+                    android:textSize="15dp"
+                    android:textColor="#424141"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="2dp"
+                    android:paddingBottom="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="예방 방법"
+                    android:textSize="23dp"
+                    android:textColor="#354649"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/nanum"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="25dp"
+                    android:paddingBottom="5dp"/>
+
+                <View
+                    android:layout_width="360dp"
+                    android:layout_height="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#354649" />
+
+                <TextView
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="2dp"
+                    android:text="탈모 비율 70%입니다. 각별히 주의를 기울일 필요성이 있습니다. 머리를 감더라도 뜨거운 물보단 미지근한 물 혹은 차가운 물로 감으세요."
+                    android:textColor="#424141"
+                    android:textSize="15dp" />
+
+                <View
+                    android:layout_width="360dp"
+                    android:layout_height="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/dotted_line_horizontal" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:text="현재 단계는 탈모 진행이 이루어진 상태이므로 음식물 섭취에도 집중할 필요가 있습니다. 모근의 힘을 길러주는 검은 콩을 많이 드세요."
+                    android:textSize="15dp"
+                    android:textColor="#424141"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="2dp"
+                    android:paddingBottom="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

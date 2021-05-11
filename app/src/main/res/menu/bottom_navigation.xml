@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:icon="@drawable/home_img"
+        android:title="홈"/>
+
+    <item
+        android:id="@+id/action_board"
+        android:enabled="true"
+        android:icon="@drawable/notice"
+        android:title="게시판"/>
+
+    <item
+        android:id="@+id/action_mypage"
+        android:enabled="true"
+        android:icon="@drawable/mypage_img"
+        android:title="마이페이지"/>
+
+</menu>

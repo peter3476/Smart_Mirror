@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="inconvenience_arr">
+        <item>신고 접수 종류</item>
+        <item>고장 신고 접수</item>
+        <item>앱 버그 신고 접수</item>
+        <item>기타 신고 접수</item>
+    </string-array>
+
+</resources>

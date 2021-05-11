@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="회 원 가 입"
+            android:textStyle="bold"
+            android:textColor="#7868e6"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"
+            />
+
+        <View
+            android:layout_width="330dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:background="#7868e6"
+            />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:background="@drawable/layout_line"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="생 년 월 일"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    />
+
+                <View
+                    android:layout_width="330dp"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/dotted_line_horizontal2"
+                    />
+
+                <DatePicker
+                    android:id="@+id/DPage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:datePickerMode="spinner"
+                    android:calendarViewShown="false"
+                    />
+
+                <View
+                    android:layout_width="350dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_centerInParent="true"
+                    android:background="#a3a2a2" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="성     별"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <View
+                    android:layout_width="330dp"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/dotted_line_horizontal2"
+                    />
+
+                    <LinearLayout
+                        android:layout_width="373dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:layout_gravity="center">
+
+                        <RadioGroup
+                            android:gravity="center"
+                            android:id="@+id/sexRG"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="30dp">
+
+                            <RadioButton
+                                android:id="@+id/maleBtn"
+                                android:text="남자"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="50dp"
+                                />
+                            <RadioButton
+                                android:id="@+id/femaleBtn"
+                                android:text="여자"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+                        </RadioGroup>
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Register_Success_Btn"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text="회원가입 완료"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:background="@drawable/login_btn"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            />
+
+</LinearLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="회 원 가 입"
+            android:textStyle="bold"
+            android:textColor="#7868e6"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"
+            />
+
+        <View
+            android:layout_width="330dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:background="#7868e6"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:gravity="center">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="240dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:hint="아이디를 입력해주세요">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Sign_id"
+                    android:layout_width="240dp"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:singleLine="true"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="20dp"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/Sign_CKid"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="중복 확인"
+                android:textColor="#7868e6"
+                android:textSize="15sp"
+                android:background="@drawable/btn_pwck"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:gravity="center">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="330dp"
+                android:layout_height="60dp"
+                android:hint="비밀번호를 입력해주세요">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Sign_pw"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:singleLine="true"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="20dp"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:gravity="center">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="330dp"
+                android:layout_height="60dp"
+                android:hint="비밀번호를 다시 입력해주세요">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Sign_CKpw"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:singleLine="true"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="20dp"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:gravity="center">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="330dp"
+                android:layout_height="60dp"
+                android:hint="이름을 입력해주세요">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Sign_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:singleLine="true"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="20dp"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Register_Next_Btn"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text="다  음"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:background="@drawable/login_btn"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
